@@ -3,7 +3,7 @@ body {
   font-size: 16px;
 }
 a {
-  color: #009688;
+  color: #fdd835;
 }
 blockquote {
   border-left: 5px solid #795548;
@@ -66,7 +66,7 @@ p code {
   text-decoration: underline;
 }
 #blog a:hover {
-  background: #009688;
+  background: #fdd835;
   color: white;
 }
 #blog ol {
@@ -92,6 +92,7 @@ ul.table-of-contents li.logo a:hover {
   font-weight: 200;
 }
 ul.side-nav.fixed li.logo {
+  background: url(../img/profile2.jpg) no-repeat center center/cover;
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
@@ -140,10 +141,10 @@ h3 {
   height: 100vh;
 }
 #intro.section {
-  background: url(../img/profile2.jpg) no-repeat center
-    center/cover;
   position: relative;
   background-size: 100% ;
+  background: url(../img/bg.jpg) no-repeat center center/cover;
+  
 }
 #intro.section .container {
   color: white;
@@ -159,7 +160,7 @@ h3 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 #intro.section .underline {
-  border-bottom: 5px solid #009688;
+  border-bottom: 5px solid #fdd835;
 }
 #intro.section .teal {
   padding: 0 10px;
@@ -255,7 +256,7 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 a.hoverline:hover {
-  border-bottom: 3px solid #009688 !important;
+  border-bottom: 3px solid #fdd835 !important;
 }
 #skills .card.large {
   height: 360px;
@@ -315,10 +316,10 @@ small {
   color: #666 !important;
 }
 .teal-text {
-  color: #008073 !important;
+  color: #2F3333 !important;
 }
 .teal {
-  background-color: #008073 !important;
+  background-color: #2F3333 !important;
 }
 @media (min-width: 1200px) {
   #experience .container {
@@ -354,7 +355,7 @@ small {
   }
   nav a.button-collapse,
   nav a.button-collapse i {
-    color: #009688;
+    color: #fdd835;
     height: 56px;
     line-height: 56px;
   }
@@ -372,7 +373,7 @@ small {
     top: 0;
     z-index: 2;
   }
-  .name-title {
+  .name-title {    
     display: block;
     height: 100%;
     padding-top: 15px;
@@ -445,4 +446,16 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+.newClassLi {
+  font-size: 1.5em;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fdd835;
+  border-radius: 50%;
+  display: inline-block;
 }

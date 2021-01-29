@@ -32,6 +32,33 @@
       <script src="./assets/js/js"></script>
       <script async="" src="./assets/js/adblocker-chromeglobalinjectjs.js"></script>
       <style type="text/css">
+         .white-text {
+            color: #fdd835 !important;
+            font-weight: 300;
+         }
+
+         @media screen and (min-width: 800px) {
+             .pad {
+               padding: 100px;
+             }
+         }
+
+         @media screen and (max-width: 600px) {
+           .hideMobile {
+             visibility: hidden;
+             display: none;
+           }
+         }
+
+         @media screen and (min-width: 600px) {
+           #highlights {
+             visibility: hidden;
+             display: none;
+           }
+         }
+
+         
+
          @font-face {
          font-weight: 400;
          font-style:  normal;
@@ -65,12 +92,12 @@
       <nav class="hide-on-small-only">
          <ul class="side-nav fixed section table-of-contents">
             <li class="logo">
-               <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text active">
+               <!-- <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text active">
                   <h1>
                      Sangam Angre<span class="brown-text light">Lead Software Engineer</span>
                   </h1>
                </a>
-            </li>
+ -->            </li>
             <li class="bold">
                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a>
             </li>
@@ -97,7 +124,7 @@
       <nav class="hide-on-large only trigger z-depth-1">
          <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
          <div class="name-title">
-            <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Sangam Angre</a><span class="brown-text light">Lead Software Engineer</span>
+            <!-- <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Sangam Angre</a><span class="brown-text light">Lead Software Engineer</span> -->
          </div>
       </nav>
       <nav class="hide-on-large only">
@@ -129,58 +156,54 @@
       <main>
          <section id="intro" class="section scrollspy full-height">
             <div class="overlay"></div>
-            <div class="container">
-               <h2>
-                  I want to <span class="teal">make things</span><br>that
-                  <span class="underline">make a difference</span>.
+            <div class="container pad">
+               <h2 style="font-size: 4em;font-weight: 500;color: #fdd835">
+                  Hi, I'm Sangam Angre,
                </h2>
+               
+               <h4 class="hideMobile" style="font-size: 3em;font-weight: 300;text-transform: none;">
+                  A software engineer specialized in backend technologies.
+               </h3>
+
+               <ul class="hideMobile" style="list-style: none;" id="ListViewInner">
+                  <li class="newClassLi"><span class="dot"></span>&nbsp; Founding member of two software companies that got acquired successfully.</li>
+                  <li class="newClassLi"><span class="dot"></span>&nbsp; 8+ years​ of experience in building ​SaaS​ products.</li>
+                  <li class="newClassLi"><span class="dot"></span>&nbsp; 4 years of experience in the education domain.</li>
+                  <li class="newClassLi"><span class="dot"></span>&nbsp; 4 years of experience in the customer engagement domain.</li>
+                  <li class="newClassLi"><span class="dot"></span>&nbsp; Current Focus: ​Python // React</li>
+               </ul>
+               
             </div>
          </section>
          <section id="about" class="section scrollspy">
             <h3 class="page-title white-text teal">About</h3>
-            <div class="container flow-text">
+            <div class="container">
                <blockquote>
                   <h2>
-                     A Strong Technologist,
-                     talented, ambitious and
-                     hardworking individual with a
-                     deep understanding of Mobile
-                     and Cloud Space. 10+ years
-                     headed Engineering in multiple
-                     products and bring in
-                     extensive experience to build
-                     an organisation involved in
-                     Product Engineering and R&D.
+                     A Strong Technologist, talented, ambitious, and hardworking individual with a deep understanding of Mobile and Cloud Space. 10+ years headed Engineering in multiple products and bring in extensive experience to build an organization involved in Product Engineering and R&D.
                   </h2>
                </blockquote>
                <p>
-                  Fullstack developer with a passion for building meaningful products and more than 10 years of experience mostly in startups. Talented, ambitious, and hardworking individual, with broad skills and experience in developing, managing, and leading software products.
+                  - Fullstack developer with a passion for building meaningful products and more than 10 years of experience mostly in startups. 
                </p>
                <p>
-                  I'm a hands-on technical leader who has built software products from the ground up, run large engineering teams, and provided guidance at the executive and board level. I'm motivated by product success and business growth, not technology for technology's sake.
+                  - Talented, ambitious, and hardworking individual, with broad skills and experience in developing, managing, and leading software products.
                </p>
                <p>
-                        I'm always interested in becoming a better technology leader, and meeting interesting people aroung the globe.
+                  - A Technical leader who has built software products from the ground up, run large engineering teams and provided guidance at the executive and board level. 
                </p>
-
-
-
                <p>
-                  <strong>Current Focus</strong>:&nbsp;
-                     <a>Python</a>
-                     &nbsp;//&nbsp;
-                     <a>React</a>
-                     &nbsp;//&nbsp;
-                     <a>Product Development</a>
-                     &nbsp;//&nbsp;
-                     <a>Startup</a>
+                  - Motivated by product success and business growth, not technology for technology's sake.
+               </p>
+               <p>
+                  - Always interested in becoming a better technology leader, and meeting interesting people around the globe.
                </p>
             </div>
          </section>
 
          <section id="highlights" class="section scrollspy">
             <h3 class="page-title white-text teal">Highlights</h3>
-            <div class="container flow-text">
+            <div class="container">
                <p>
                   <ul style="list-style: disc;">
                      <li style="list-style: disc;"><strong>Foundeding member</strong> of two software companies which got acquired successfully.</li>
@@ -195,11 +218,6 @@
                </p>
             </div>
          </section>
-
-
-         
-
-
          <section id="experience" class="section scrollspy">
             <h3 class="page-title white-text teal">Experience</h3>
             <div class="container">
@@ -246,7 +264,7 @@
                      <h6>Accomplishments</h6>
                      <ul>
                         <li>
-                           Built an LMS using microservice architecture which can be access by 300,000+ learners.
+                           Built an LMS using microservice architecture which can be accessed by 300,000+ learners.
                         </li>
                         <li>
                            Built a CodeBlock to support Python, Java, Javascript language where learners can practice coding online.
@@ -290,11 +308,11 @@
                      <h6>Develop Product</h6>
                      <ul>
                         <li>Build the system architecture for web platform.</li>
-                        <li>Build the system architecture for mobile SDK. Easily integrated to client app as libary to invoke chat from Mobile App.</li>
+                        <li>Build the system architecture for mobile SDK. Easily integrated to client app as library to invoke chat from Mobile App.</li>
                         <li>Build online chat system which supports video chat using WebRTC which can connect over mobile client too.</li>
-                        <li>Identifing the problem statement along with Product manager and planning phase wise implementation in Product</li>
+                        <li>Identifying the problem statement along with Product manager and planning phase wise implementation in Product</li>
                         <li>Setting up guidelines for the code.</li>
-                        <li>Was part of the system from 1st day and can point out any function within any service with its reponsibility and boundary.</li>
+                        <li>Was part of the system from 1st day and can point out any function within any service with its responsibility and boundary.</li>
                         <li>Review and debug code.</li>
                         <li>Ensure software is up-to-date with latest technologies.</li>
                         <li>Collaborate with external teams and vendors to fix and improve products to grow business.</li>
@@ -307,8 +325,8 @@
                      <h6>Accomplishments</h6>
                      <ul>
                         <li>Built a Helpdesk and Online chat system to engage customers.</li>
-                        <li>Setting a rounting service where Helpdesk ticket and Chat gets assign to right agent.</li>
-                        <li>Specially awarded by Mr. Manish Amin, co-founder of Yatra.com to succeffully migrating their existing product by C360</li>
+                        <li>Setting a routing service where Helpdesk ticket and Chat gets assign to right agent.</li>
+                        <li>Specially awarded by Mr. Manish Amin, co-founder of Yatra.com to successfully migrating their existing product by C360</li>
                      </ul>
                   </div>
                   <div class="card-action">
@@ -336,13 +354,13 @@
                      <div class="role brown-text">Software Engineer</div>
                      
                      <p>
-                        Anveshan Technologies is a company based in Mumbai India, with objective to serve small to medium business in the field of Android Application Development, website development, website designing, mobile applications development, iPad Application Development, iPhone Application Development, to grow their business
+                        Anveshan Technologies is a company based in Mumbai India, with an objective to serve small to medium business in the field of Android Application Development, website development, website designing, mobile applications development, iPad Application Development, iPhone Application Development, to grow their business
                      </p>
                      <h6>Develop Projects</h6>
                      <ul>
-                        <li>Homesretreat.com, a projects based on php Yii framwork in travel domain</li>
-                        <li>ShoppinPal, a Android and IOS app, modular B2B SaaS Cloud Tech Integration Suite</li>
-                        <li>Wakesout, a Android and IOS app, to book watersports across UK</li>
+                        <li>Homesretreat.com, a projects based on PHP Yii framework in the travel domain</li>
+                        <li>ShoppinPal, an Android and IOS app, modular B2B SaaS Cloud Tech Integration Suite</li>
+                        <li>Wakesout, an Android and IOS app, to book watersports across the UK</li>
                         <li>Stack:&nbsp;&nbsp;PHP, JavaScript, MySQL, IOS, Android, Yii, WordPress, AWS, Git.</li>
                      </ul>
                      
@@ -427,7 +445,7 @@
                               <li><strong>Got acquired by ININ, a Nasdaq listed US based company</strong></li>
                               <li>Microservice Architecture</li>
                               <li>Installed on 1500+ small businesses website.</li>
-                              <li>Embeddable Heldesk and Chat widgets across any site.</li>
+                              <li>Embeddable Helpdesk and Chat widgets across any site.</li>
                            </ul>
                            <!-- <div class="card-action">
                               <a aria-label="Visit Interpol8r web app" href="https://interpol8r.herokuapp.com/" target="_blank" data-position="top" data-tooltip="Preview" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-lEnk"></i></a>
@@ -563,13 +581,13 @@
             <h3 class="page-title white-text teal">Contact</h3>
             <div class="container">
                <p>
-                  <a aria-label="Email Sangam" href="mailto:angresangam@gmail.com" data-position="top" data-tooltip="Email Sangam" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i></a><a aria-label="Email Sangam" href="mailto:angresangam@gmail.com" class="hoverline">angresangam@gmail.com</a>
+                  <a style="color: blue;" aria-label="Email Sangam" href="mailto:angresangam@gmail.com" data-position="top" data-tooltip="Email Sangam" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i></a><a style="color: blue;" aria-label="Email Sangam" href="mailto:angresangam@gmail.com" class="hoverline">angresangam@gmail.com</a>
                </p>
                <p>
-                  <a aria-label="View Sangam on GitHub" href="http://github.com/sangamangre" target="_blank" data-position="top" data-tooltip="View Sangam on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a><a aria-label="Sangam on Github" href="http://github.com/sangamangreg" class="hoverline">github.com/sangamangreg</a>
+                  <a style="color: blue;" aria-label="View Sangam on GitHub" href="http://github.com/sangamangre" target="_blank" data-position="top" data-tooltip="View Sangam on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a><a style="color: blue;" aria-label="Sangam on Github" href="http://github.com/sangamangreg" class="hoverline">github.com/sangamangreg</a>
                </p>
                <p>
-                  <a aria-label="View Sangam on LinkedIn" href="http://linkedin.com/in/sangamangre" target="_blank" data-position="top" data-tooltip="View Sangam on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i></a><a aria-label="Sangam on LinkedIn" href="http://linkedin.com/in/sangamangre" class="hoverline">linkedin.com/in/sangamangre</a>
+                  <a style="color: blue;" aria-label="View Sangam on LinkedIn" href="http://linkedin.com/in/sangamangre" target="_blank" data-position="top" data-tooltip="View Sangam on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i></a><a style="color: blue;" aria-label="Sangam on LinkedIn" href="http://linkedin.com/in/sangamangre" class="hoverline">linkedin.com/in/sangamangre</a>
                </p>
             </div>
          </section>
